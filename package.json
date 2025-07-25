@@ -1,0 +1,43 @@
+{
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "name": "de-complain",
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "prebuild": "npm run prebuild --workspaces --if-present",
+    "pretest": "npm run prebuild --workspaces --if-present",
+    "start": "npm start --workspaces --if-present",
+    "test": "npm test --workspaces --if-present"
+  },
+  "type": "module",
+  "workspaces": [
+    "src/de-complain-frontend"
+  ],
+  "dependencies": {
+    "@dfinity/agent": "^0.15.7",
+    "@dfinity/auth-client": "^0.15.7",
+    "@dfinity/candid": "^0.15.7",
+    "@noble/hashes": "^1.7.1",
+    "@remix-run/router": "^1.23.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.4.0"
+  },
+  "devDependencies": {
+    "@types/babel__core": "^7.20.5",
+    "@types/babel__generator": "^7.6.8",
+    "@types/babel__template": "^7.4.4",
+    "@types/babel__traverse": "^7.20.7",
+    "@types/estree": "^1.0.7",
+    "@types/node": "^22.13.14",
+    "@types/prop-types": "^15.7.14",
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "dotenv": "^16.4.7",
+    "vite": "^6.2.3",
+    "vite-plugin-environment": "^1.1.3"
+  }
+}
